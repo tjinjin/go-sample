@@ -18,7 +18,6 @@ func main() {
 }
 /*/
 
-/*
 // fallthrough
 func main() {
 	n := 3
@@ -28,24 +27,24 @@ func main() {
 		fallthrough
 	case 2:
 		n = n - 1
-		fallthrough
+		//		fallthrough
 	case 1:
 		n = n - 1
 		fmt.Println(n)
 	}
+	fmt.Println(n)
 }
-*/
 
-func main() {
-	n := 10
-	switch {
-	case n%15 == 0:
-		fmt.Println("FizzBuzz")
-	case n%5 == 0:
-		fmt.Println("Buzz")
-	case n%3 == 0:
-		fmt.Println("Fizz")
-	default:
-		fmt.Println(n)
-	}
-}
+//func main() {
+//	n := 10
+//	switch {
+//	case n%15 == 0:
+//		fmt.Println("FizzBuzz")
+//	case n%5 == 0:
+//		fmt.Println("Buzz")
+//	case n%3 == 0:
+//		fmt.Println("Fizz")
+//	default:
+//		fmt.Println(n)
+//	}
+//}
