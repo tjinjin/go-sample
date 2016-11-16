@@ -12,5 +12,9 @@ func main() {
 	fmt.Println(startTime)
 	fmt.Println(currentTime)
 	fmt.Println(duration)
+	// 日付感のdurationを取得して何日差か日で示
 	fmt.Println(duration.Hours() / 24)
+	fmt.Println(startTime.Add(duration))
+	t := time.Now()
+	fmt.Println(t.Month())
 }
