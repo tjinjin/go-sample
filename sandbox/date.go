@@ -17,4 +17,14 @@ func main() {
 	fmt.Println(startTime.Add(duration))
 	t := time.Now()
 	fmt.Println(t.Month())
+	//１日進める
+	fmt.Println(startTime.Add(24 * time.Hour))
+	fmt.Println(startTime.AddDate(0, 0, 1))
+	fmt.Println(t.Add(24 * time.Hour))
+	fmt.Println(t.AddDate(0, 0, 1))
+	//1日戻る
+	fmt.Println(t.Add(-24 * time.Hour))
+	fmt.Println(t.AddDate(0, 0, -1))
+	// 今年の何日目か
+	fmt.Println(t.YearDay())
 }
