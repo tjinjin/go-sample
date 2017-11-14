@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func later() func(string) string {
-	// ローカル変数だけど、clojure内の関数として扱われる
+	// ローカル変数だけど、clojure内の関数として扱われる（クロージャ内で保存できる
 	var store string
 	return func(next string) string {
 		s := store
